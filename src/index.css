@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: grey;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: space-between;
+  align-items: center;
+  place-items: center;
+  height: 50px;
+}
+
+.navbar ul li {
+  display: inline-flex;
+  margin: 40px;
+  color: white;
+}
+
+.navbar ul li:hover {
+  color: lightsteelblue;
+  cursor: pointer;
+}
+
+.logo {
+  margin-left: 13px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.text {
+  text-align: center;
+}
+
+
+.text textarea {
+  border-radius: 12px;
+  padding: 12px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  gap: 40px;
+}
+
+
+.upper {
+  background-color: blue;
+  color: white;
+  outline: none;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.upper:hover {
+  transition: 0.2s;
+  background-color: rgb(3, 3, 173);
+
+}
+
+
+.lower {
+  background-color: green;
+  color: white;
+  outline: none;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.lower:hover {
+  transition: 0.2s;
+  background-color: rgb(2, 82, 2);
+}
+
+.delete {
+  background-color: red;
+  color: white;
+  outline: none;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.delete:hover {
+  transition: 0.2s;
+  background-color: rgb(189, 2, 2);
+}
+
+.summary {
+  color: black;
+}
+
+.summaryResult {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.copy {
+  background-color: yellow;
+  color: black;
+  outline: none;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.copy:hover {
+  transition: 0.2s;
+  background-color: rgb(167, 167, 2);
+}
+
+button {
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:700px) {
+  .header {
+    display: none;
+  }
+
+  .heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  textarea {
+    width: 100vw;
+  }
+
+  .buttons {
+    gap: 10px;
+    font-size: 12px;
+  }
+}
